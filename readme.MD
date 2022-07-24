@@ -8,4 +8,4 @@ ConeNet-V2 is a specially-tuned fully-convolutional neural network for self-driv
 
 ## Sample
 
-![Sample ConeNet image](https://github.com/TDay1/ConeNet-v2/raw/master/sample/ConeNetv2-sample.png "ConeNet Sample image")
+![Sample ConeNet image](https://raw.githubusercontent.com/TDay1/ConeNet-v2/master/samples/ConeNetv2-sample.png "ConeNet Sample image")
