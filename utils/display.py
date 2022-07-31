@@ -2,7 +2,7 @@ import torchvision
 from PIL import Image, ImageDraw
 from torchsummary import summary
 
-def display_bboxes(image, y_pred, y_true):
+def display_bboxes(image, y_pred, y_true, conf_thresh = 0.1):
     """
     Displays bboxes on an image
     """
@@ -21,7 +21,7 @@ def display_bboxes(image, y_pred, y_true):
             current_cell = y_true[x_cell, y_cell]
 
 
-            if current_cell[0,4] > 0.1:
+            if current_cell[0,4] > conf_thresh:
                 x  = x_cell * rel_cell_size + current_cell[0, 0]
                 y  = y_cell * rel_cell_size + current_cell[0, 1]
 
